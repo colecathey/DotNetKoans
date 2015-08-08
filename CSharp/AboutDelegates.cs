@@ -33,14 +33,14 @@ namespace DotNetKoans.CSharp
 		{
 			//If you don't initialize a delegate it will be a null value, just as any other refrence type.
 			BinaryOp op;
-			Assert.Null(FILL_ME_IN);
+			Assert.Null(null);
 		}
 		[Koan(2)]
 		public void DelegatesCanBeInstantiated()
 		{
 			MyMath math = new MyMath();
 			BinaryOp op = new BinaryOp(math.Add);
-			Assert.Equal(FILL_ME_IN, op.Method.Name);
+			Assert.Equal(BinaryOp(math.Add,), op.Method.Name);
 		}
 		[Koan(3)]
 		public void DelegatesCanBeAssigned()
